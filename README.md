@@ -1,5 +1,5 @@
 # homeTask1
-This is the first home task with a markup of the site
+This is the first home task with a markup of the site.
 A detailed description of the task is posted below:
 
 Первое задание.
