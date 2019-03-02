@@ -17,7 +17,8 @@
 
 	<link media="all" rel="stylesheet" href="css/main.css">
 
-	<!--  <link rel="stylesheet" href="css/icomoon.css"> -->
+	<link rel="stylesheet" href="css/icomoon/icomoon.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 </head>
 
@@ -26,45 +27,85 @@
 		<header id="header">
 			<div class="container">
 				<div class="row">
-					<div class="col-logo col">
+					<div class="col-logo col-2">
 						<h1 class="logo" title="MODUSversus"><a href="index.html"><img src="./sourceimages/logo.png" alt="MODUSversus"></a></h1>
 					</div>
-					<div class="main-menu col-8">
+					<div class="main-menu col-9">
 						<a class="mobile-menu" href="#"></a>
 						<nav id="main-nav">
 							<ul class="navigation">
 								<li class="active"><a href="#" title="Home">Home</a></li>
 								<li><a href="#" title="About">About</a></li>
 								<li><a href="#" title="Services">Services</a></li>
-								<li><a href="#" title="Portfolio">Portfolio</a></li>
+								<li><a href="web/portfolio.html" title="Portfolio">Portfolio</a>
+									<ul class="parent second-level">
+										<li class="child">Portfolio 2 column page</li>
+										<li class="child">Portfolio 2 column page</li>
+										<li class="child">Portfolio 2 column page</li>
+									</ul>
+								</li>
 								<li><a href="#" title="Blog">Blog</a></li>
 								<li><a href="#" title="Features">Features</a></li>
 								<li><a href="#" title="Contacts">Contacts</a></li>
 							</ul>
 						</nav>
 					</div>
-					<div class="col-search col">
-						<a href="#" title="Search">Search</a>
+					<div class="col-search">
+						<a class="search-field" href="#" title="Search"><span class="icon-search"><span></a>
 					</div>
 				</div>
 			</div>
 		</header>
 
 		<main id="main">
-			<div class="album-banner col-banner">
+			<div class="album-banner col-banner clearfix">
 				<div class="content-box">
-					<h3><a href="#">Vestibulum</a></h3>
-					<p>Maecenas tincidunt, augue et rutrum cordimentum,
-						<br>
-						libero lectus mattis orcim ut commodo.
-					</p>
+					<div class="text-data">
+						<h3><a href="#">Vestibulum</a></h3>
+						<p>Maecenas tincidunt, augue et rutrum cordimentum,
+							<br>
+							libero lectus mattis orcim ut commodo.
+						</p>
+					</div>
 				</div>
 				<div class="content-box">
-					<h3><a href="#">Vestibulum2</a></h3>
-					<p>Maecenas tincidunt, augue et rutrum cordimentum,
-						<br>
-						libero lectus mattis orcim ut commodo.
-					</p>
+					<div class="text-data">
+						<h3><a href="#">Vestibulum</a></h3>
+						<p>Maecenas tincidunt, augue et rutrum cordimentum,
+							<br>
+							libero lectus mattis orcim ut commodo.
+						</p>
+					</div>
+				</div>
+				<div class="content-box">
+					<div class="text-data">
+						<h3><a href="#">Vestibulum</a></h3>
+						<p>Maecenas tincidunt, augue et rutrum cordimentum,
+							<br>
+							libero lectus mattis orcim ut commodo.
+						</p>
+					</div>
+					<img src="./sourceimages/bg-slide1.jpg" alt="bg-slide1">
+				</div>
+				<div class="content-box">
+					<div class="text-data">
+						<h3><a href="#">Vestibulum</a></h3>
+						<p>Maecenas tincidunt, augue et rutrum cordimentum,
+							<br>
+							libero lectus mattis orcim ut commodo.
+						</p>
+					</div>
+					<img src="./sourceimages/bg-slide2.jpg" alt="bg-slide2">
+				</div>
+				<div class="content-box">
+					<div class="text-data">
+						<h3><a href="#">Vestibulum</a></h3>
+						<p>Maecenas tincidunt, augue et rutrum cordimentum,
+							<br>
+							libero lectus mattis orcim ut commodo.
+						</p>
+					</div>
+					<img src="./sourceimages/bg-slide3.jpg" alt="bg-slide3">
 				</div>
 			</div>
 
@@ -81,7 +122,7 @@
 			<section class="services">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-3">
 							<div class="card">
 								<div class="top-block">
 									<div class="icon-wrapper">
@@ -96,7 +137,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-3">
 							<div class="card">
 								<div class="top-block">
 									<div class="icon-wrapper">
@@ -111,7 +152,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-3">
 							<div class="card">
 								<div class="top-block">
 									<div class="icon-wrapper">
@@ -126,7 +167,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-3">
 							<div class="card">
 								<div class="top-block">
 									<div class="icon-wrapper">
@@ -337,10 +378,10 @@
 							<p>2013 ModusVersus</p>
 						</div>
 						<div class="footer_area-socialmedia col-md-3 col-md-offset-5">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-rss"></i></a>
+							<a href="#"><span class="icon-facebook"><span></a>
+							<a href="#"><span class="icon-google"><span></a>
+							<a href="#"><span class="icon-twitter"><span></a>
+							<a href="#"><span class="icon-rss"><span></a>
 						</div>
 					</div>
 				</div>

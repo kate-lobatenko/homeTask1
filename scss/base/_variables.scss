@@ -12,8 +12,16 @@ $brand-color3: #76c7c0; // brand background color
 $red: red;
 $light-turquoise: #76c7c0;
 
-$base-font-sans-serif: 'Open Sans', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
-$base-font-serif: 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
+$base-font-sans-serif: 'Open Sans',
+'Arial',
+'Helvetica Neue',
+'Helvetica',
+sans-serif;
+$base-font-serif: 'Times New Roman',
+'Times',
+'Baskerville',
+'Georgia',
+serif;
 
 // Body
 $base-text-color: $brand-color;
@@ -54,3 +62,12 @@ $headings-color: $brand-color2;
 
 
 $animation-speed: 0.3s;
+
+// Header
+$link-border-color: #e2534b;
+$hover-link-bg-color: #e2534b;
+$hover-link-border-color: #e2534b;
+$active-link-bg-color: #62A29E;
+
+// Album banner
+$content-bg: #7f8c8c;
