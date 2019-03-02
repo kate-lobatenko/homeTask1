@@ -1,0 +1,29 @@
+#header {
+    background: url("../sourceimages/bg-header.png") $base-background-color repeat-x 100% 100%;
+}
+
+.navigation,
+#main-nav {
+    height: 100%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-logo {
+    padding-left: 0;
+}
+
+.navigation li a {
+    text-decoration: none;
+    padding: 10px 13px;
+}
+
+.col-search {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
