@@ -1,18 +1,33 @@
 .album-banner {
     text-align: center;
-    height: 500px;
-    max-height: 500px;
+    height: 520px;
+    max-height: 520px;
     overflow: hidden;
+
+    .desc-data {
+        background-color: $black;
+        opacity: 0.5;
+        display: inline-block;
+        color: $white;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.6px;
+    }
 
     h3 {
         font-size: 50px;
         font-weight: 900;
-        line-height: 60px;
+        margin-bottom: 10px;
         text-transform: uppercase;
+
         a {
             color: $white;
             background-color: $hover-link-bg-color;
-            padding: 6px 7px;
+            line-height: 1;
+            max-height: 50px;
+            overflow: hidden;
+            display: inline-block;
         }
     }
 
@@ -23,16 +38,35 @@
     }
 
     .slick-prev {
-        left: 10px;
+        left: 0;
+
+        &:before {
+            font-family: 'icomoon', 'sans-serif';
+            content: "\e90e";
+        }
     }
 
     .slick-next {
-        right: 10px;
+        right: 0;
+
+        &:before {
+            font-family: 'icomoon', 'sans-serif';
+            content: "\e90d";
+        }
     }
 
     .slick-prev,
     .slick-next {
         z-index: 1;
+        width: 50px;
+        height: 50px;
+        background: $hover-link-bg-color;
+        border-radius: 0 5px 5px 0;
+
+        &:before {
+            font-size: 40px;
+            font-weight: 400;
+        }
     }
 
     .content-box {
@@ -50,5 +84,13 @@
         top: 40%;
         z-index: 10;
         display: block;
+    }
+
+    .slick-dots {
+        position: relative;
+        bottom: 0;
+        z-index: 100;
+        clear: both;
+        float: none;
     }
 }
