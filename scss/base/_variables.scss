@@ -36,12 +36,18 @@ $base-min-width: 320px;
 
 // Links
 $base-link-color: $red;
+$link-border-color: #e2534b;
+$hover-link-bg-color: #e5645d;
+$hover-link-border-color: #e2534b;
+$active-link-bg-color: #62A29E;
+$active-link-border-color: #528B86;
 
 // Buttons 
 $btn-color: $white;
-$btn-background: $light-turquoise;
+$btn-background: #e8645a;
 $btn-padding: 0.4em 0.7em !default;
 $btn-font-size: inherit !default;
+$btn-read-more-color: #76c7c0;
 
 // Forms
 $form-element-padding: $btn-padding !default;
@@ -63,14 +69,13 @@ $headings-color: $brand-color2;
 
 $animation-speed: 0.3s;
 
-// Header
-$link-border-color: #e2534b;
-$hover-link-bg-color: #e5645d;
-$hover-link-border-color: #e2534b;
-$active-link-bg-color: #62A29E;
-
 // Album banner
 $content-bg: #7f8c8c;
 
 // View more block
 $block-bg: #ececec;
+$text-color: #777777;
+
+// Main
+$bg-main-color: #f3f3f3;
+$default-margin: 50px;

@@ -43,8 +43,8 @@
 
 .navigation li.active a {
     background: $active-link-bg-color;
-    border-bottom: 3px solid #528B86;
-    transition: all 0.2s ease-in-out 0s;
+    border-bottom: 3px solid $active-link-border-color;
+    transition: all $animation-speed ease-in-out 0s;
 }
 
 .col-search {
@@ -63,10 +63,23 @@
     padding: 8px;
     font-weight: 400;
     line-height: 1;
+    position: relative;
+
     &:hover {
         background: $hover-link-bg-color;
         border-bottom: 3px solid $link-border-color;
         color: $white;
         border-radius: 5px;
     }
+}
+
+#search {
+    display: none;
+}
+
+.active-search #search {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0;
 }

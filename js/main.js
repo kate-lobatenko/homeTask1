@@ -53,4 +53,9 @@ $(document).ready(function () {
     $('.navigation li').not(this).removeClass('active');
     $(this).toggleClass('active');
   });
+
+// Search field
+  $('.search-field').click(function() {
+		$('.search-field').toggleClass('active-search');
+	});
 });

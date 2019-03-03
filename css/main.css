@@ -353,6 +353,10 @@ td,
 th {
   padding: 0; }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+
 .clearfix:after {
   content: '';
   display: block;
@@ -518,6 +522,37 @@ input[type='submit'] {
   -webkit-border-radius: 0;
   cursor: pointer; }
 
+.buttn {
+  border-bottom: 3px solid #e2534b;
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  background: #e8645a;
+  color: #fff;
+  font-size: 14px;
+  line-height: 50px;
+  border-radius: 5px; }
+  .buttn:hover {
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
+.btn-view-more {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase; }
+  .btn-view-more:hover {
+    background: #76c7c0;
+    border-bottom: 3px solid #528B86; }
+
+.btn-read-more {
+  background: #76c7c0;
+  border-bottom: 3px solid #528B86; }
+  .btn-read-more:hover {
+    background: #e8645a;
+    border-bottom: 3px solid #e2534b; }
+
 .album-banner {
   text-align: center;
   height: 520px;
@@ -633,8 +668,8 @@ input[type='submit'] {
 .navigation li.active a {
   background: #62A29E;
   border-bottom: 3px solid #528B86;
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s; }
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
 
 .col-search {
   -webkit-box-align: center;
@@ -655,19 +690,52 @@ input[type='submit'] {
   font-size: 16px;
   padding: 8px;
   font-weight: 400;
-  line-height: 1; }
+  line-height: 1;
+  position: relative; }
   .search-field:hover {
     background: #e5645d;
     border-bottom: 3px solid #e2534b;
     color: #fff;
     border-radius: 5px; }
 
+#search {
+  display: none; }
+
+.active-search #search {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0; }
+
 #footer a, #footer p {
   color: #fff; }
 
 .view-more-data {
   background: #ececec;
-  width: 100%; }
+  width: 100%;
+  padding: 28px 24px; }
+  .view-more-data .title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: initial;
+    margin-bottom: 0;
+    font-weight: 600; }
+  .view-more-data .text {
+    color: #777777;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20.8px; }
+  .view-more-data .btn-view-more {
+    float: right; }
+  .view-more-data .text-wrapper {
+    float: left; }
+
+.services {
+  margin-bottom: 50px;
+  margin-top: 50px; }
+  .services .card {
+    text-align: center; }
 
 #wrapper {
   width: 100%;
