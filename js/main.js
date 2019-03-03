@@ -16,8 +16,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: true,
-    accessibility: true,
-    infinite: true
+    accessibility: true
   });
 
   $('.our-jobs-slider').slick({

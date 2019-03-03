@@ -139,12 +139,6 @@
     font-weight: 800;
 }
 
-.clients-title {
-    position: relative;
-    width: 100%;
-    display: block;
-}
-
 .caption p {
     background: #f8f8f8;
     padding: 16px;
@@ -163,4 +157,12 @@
     color: #777;
     margin: 10px 0;
     line-height: 20px;
+}
+
+.progress-bar {
+    max-width: 120px;
+}
+
+.list-progressbars li {
+    display: inline-block;
 }

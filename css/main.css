@@ -667,11 +667,6 @@ input[type='submit'] {
   font-size: 16px;
   font-weight: 800; }
 
-.clients-title {
-  position: relative;
-  width: 100%;
-  display: block; }
-
 .caption p {
   background: #f8f8f8;
   padding: 16px; }
@@ -688,6 +683,28 @@ input[type='submit'] {
   color: #777;
   margin: 10px 0;
   line-height: 20px; }
+
+.progress-bar {
+  max-width: 120px; }
+
+.list-progressbars li {
+  display: inline-block; }
+
+.clients-slider .clients-slider {
+  height: 90px; }
+
+.clients-slider .slick-slide .item-img {
+  width: 170px;
+  height: 90px;
+  border: none;
+  border-radius: 0;
+  margin: 15px;
+  display: inline-block; }
+
+.clients-title {
+  position: relative;
+  width: 100%;
+  display: block; }
 
 .album-banner {
   text-align: center;
@@ -852,6 +869,14 @@ input[type='submit'] {
 #footer .footer-title {
   color: #3b6460; }
 
+.footer-copyright {
+  background-color: #6AB3AC;
+  height: 50px;
+  line-height: 50px; }
+  .footer-copyright .icon,
+  .footer-copyright p {
+    color: #fff; }
+
 .portfolio-page {
   min-height: auto; }
   .portfolio-page .content {
@@ -901,6 +926,15 @@ input[type='submit'] {
     .portfolio-page h4 {
       margin-bottom: 30px; } }
 
+.breadcumbs {
+  height: 80px;
+  line-height: 80px;
+  padding-left: 10px;
+  background-color: #ECECEC;
+  color: #7F8C8C;
+  display: block;
+  width: 100%; }
+
 .portfolio-nav {
   line-height: 50px;
   margin: 10px 0; }
@@ -910,7 +944,8 @@ input[type='submit'] {
     height: 35px;
     margin-right: 5px;
     background-color: #9BA3A3;
-    box-shadow: 0 3px #7F8C8C; }
+    box-shadow: 0 3px #7F8C8C;
+    line-height: 1; }
     .portfolio-nav button:hover {
       background-color: #62A29E;
       box-shadow: 0 3px #528B86; }
@@ -980,6 +1015,7 @@ button.active-page {
     line-height: 36px;
     text-transform: initial;
     margin-bottom: 0;
+    margin-top: 0;
     font-weight: 600; }
   .view-more-data .text {
     color: #777777;
