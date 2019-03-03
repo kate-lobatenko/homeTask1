@@ -9,6 +9,36 @@
         margin: 15px;
         display: inline-block;
     }
+
+    .slick-next,
+    .slick-prev {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        top: -44px;
+        background: $btn-slick;
+
+        &:hover {
+            background-color: $dark-red;
+        }
+
+        &:before {
+            font-family: 'icomoon', 'sans-serif';
+        }
+    }
+
+    .slick-prev:before {
+        content: "\e904";
+    }
+
+    .slick-next:before {
+        content: "\e907";
+    }
+
+    .slick-prev {
+        right: 40px;
+        left: auto;
+    }
 }
 
 .clients-title {

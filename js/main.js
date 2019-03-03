@@ -16,7 +16,22 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: true,
-    accessibility: true
+    accessibility: true,
+    responsive: [{
+      breakpoint: 769,
+      settings: {
+        arrows: true,
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 481,
+      settings: {
+        arrows: true,
+        slidesToShow: 1
+      }
+    }
+  ]
   });
 
   $('.our-jobs-slider').slick({
