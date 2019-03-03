@@ -56,3 +56,11 @@ ul {
 p {
   margin: 0;
 }
+
+#main {
+  background: $bg-main-color;
+}
+
+button, input, form textarea {
+  border: none;
+}

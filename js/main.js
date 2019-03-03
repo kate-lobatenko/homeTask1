@@ -16,12 +16,14 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: true,
-    accessibility: true
+    accessibility: true,
+    infinite: true
   });
 
   $('.our-jobs-slider').slick({
+    centerPadding: '60px',
+    infinite: true,
     centerMode: true,
-    centerPadding: '0',
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,

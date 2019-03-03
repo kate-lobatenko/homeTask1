@@ -402,3 +402,7 @@ $animation-speed: .3s !default;
   font-size: $pxSize;
   font-size: ($pxSize / 10px) + rem;
 }
+
+@mixin padding($padding) {
+  padding: $padding;
+}

@@ -1,6 +1,14 @@
-
 #footer {
-    a, p {
+
+    span,
+    h4,
+    a,
+    p {
         color: $white;
     }
-} 
+
+    .footer-title {
+        color: #3b6460;
+    }
+}
+

@@ -5,12 +5,21 @@
 $gray: #ccc;
 $black: #000;
 $white: #fff;
+$light-gray : #7F8C8C;
+$dark-gray : #3F4646;
+$turquoise : #76C7C0;
 $light-blue: blue;
 $brand-color: #777777; // brand text color
 $brand-color2: #7f8c8c; // brand headings color
 $brand-color3: #76c7c0; // brand background color
-$red: red;
 $light-turquoise: #76c7c0;
+$darker-turquoise: #62A29E;
+$dark-turquoise  : #528B86;
+$red             : #E8645A;
+$dark-red        : #E2534B;
+$light-blue      : #76CACA;
+$icon-color      : #62BDBD;
+$icon-color-hover: $dark-red;
 
 $base-font-sans-serif: 'Open Sans',
 'Arial',
@@ -79,3 +88,13 @@ $text-color: #777777;
 // Main
 $bg-main-color: #f3f3f3;
 $default-margin: 50px;
+
+// Services
+$bg-card-item: #f8f8f8;
+$color-icon: #62bdbd;
+$service-title-color: #7f8c8c;
+
+// Promo block
+$title-promo-color: #e1524b;
+$promo-text-color: #969696;
+$our-jobs-slider-bg: #7f8c8c;
