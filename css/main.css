@@ -690,16 +690,15 @@ input[type='submit'] {
 .list-progressbars li {
   display: inline-block; }
 
-.clients-slider .clients-slider {
-  height: 90px; }
-
-.clients-slider .slick-slide .item-img {
-  width: 170px;
-  height: 90px;
-  border: none;
-  border-radius: 0;
-  margin: 15px;
-  display: inline-block; }
+.clients-slider {
+  width: 100%; }
+  .clients-slider .slick-slide {
+    width: 170px;
+    height: 90px;
+    border: none;
+    border-radius: 0;
+    margin: 15px;
+    display: inline-block; }
 
 .clients-title {
   position: relative;
