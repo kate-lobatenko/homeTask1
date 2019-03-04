@@ -621,7 +621,8 @@ input[type='submit'] {
 
 .promo-block {
   position: relative;
-  background-color: #ececec; }
+  background-color: #ececec;
+  margin-bottom: 70px; }
   .promo-block:before {
     content: "";
     display: block;
@@ -712,7 +713,7 @@ input[type='submit'] {
 
 .list-progressbars li {
   display: inline-block;
-  width: 49%;
+  width: 24%;
   height: 90px;
   text-align: center; }
 
@@ -998,7 +999,8 @@ input[type='submit'] {
   #footer p {
     color: #fff; }
   #footer .footer-title {
-    color: #3b6460; }
+    color: #3b6460;
+    font-size: 20px; }
 
 .footer-copyright {
   background-color: #6AB3AC;
@@ -1012,7 +1014,25 @@ input[type='submit'] {
   margin-bottom: 30px; }
 
 .footer-social .icon {
-  font-size: 23px; }
+  font-size: 23px;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px; }
+
+.footer-col4 i {
+  font-weight: 300; }
+
+.email a,
+.phone-number a {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 36px;
+  font-style: italic; }
+
+.footer-details {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 23.4px; }
 
 .portfolio-page {
   min-height: auto; }

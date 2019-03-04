@@ -11,12 +11,13 @@
     }
 
     .footer-title {
-        color: #3b6460;
+        color: $footer-title-color;
+        font-size: 20px;
     }
 }
 
 .footer-copyright {
-    background-color: #6AB3AC;
+    background-color: $footer-copyright-bg;
     height: 50px;
     line-height: 50px;
 
@@ -25,6 +26,7 @@
         color: $white;
     }
 }
+
 .footer_logo {
     margin-bottom: 30px;
 }
@@ -32,5 +34,28 @@
 .footer-social {
     .icon {
         font-size: 23px;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
     }
+}
+
+.footer-col4 {
+    i {
+        font-weight: 300;
+    }
+}
+
+.email a,
+.phone-number a {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 36px;
+    font-style: italic;
+}
+
+.footer-details {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23.4px;
 }
