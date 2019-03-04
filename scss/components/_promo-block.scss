@@ -130,6 +130,17 @@
     height: 1px;
     background-color: #E1E2E2;
     left: 15%;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 7px;
+        height: 7px;
+        background-color: #e1e2e2;
+        position: absolute;
+        top: -3px;
+    }
 }
 
 .title {
@@ -157,4 +168,14 @@
     color: #777;
     margin: 10px 0;
     line-height: 20px;
+    font-weight: 400;
+}
+
+.caption small {
+    color: #777777;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 24.7px;
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 400;
 }

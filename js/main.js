@@ -1,4 +1,9 @@
 $(document).ready(function () {
+
+  // Add current year to footer
+  let currentYear = (new Date).getFullYear();
+  $('#year').text(currentYear);
+
   // Banners and slider initialisation
   $('.album-banner').slick({
     slidesToShow: 1,
@@ -62,7 +67,6 @@ $(document).ready(function () {
       }
     ]
   });
-  // Banners and slider initialisation end
 
   // Add active for links on header's navbar
   $('.navigation li').click(function () {
@@ -102,4 +106,5 @@ $(document).ready(function () {
     }
       
   });
+
 });
