@@ -83,7 +83,7 @@
 .promo-block {
     position: relative;
     background-color: $block-bg;
-    
+
     &:before {
         content: "";
         display: block;
@@ -157,12 +157,4 @@
     color: #777;
     margin: 10px 0;
     line-height: 20px;
-}
-
-.progress-bar {
-    max-width: 120px;
-}
-
-.list-progressbars li {
-    display: inline-block;
 }

@@ -18,20 +18,20 @@ $(document).ready(function () {
     arrows: true,
     accessibility: true,
     responsive: [{
-      breakpoint: 769,
-      settings: {
-        arrows: true,
-        slidesToShow: 3
+        breakpoint: 769,
+        settings: {
+          arrows: true,
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 481,
+        settings: {
+          arrows: true,
+          slidesToShow: 1
+        }
       }
-    },
-    {
-      breakpoint: 481,
-      settings: {
-        arrows: true,
-        slidesToShow: 1
-      }
-    }
-  ]
+    ]
   });
 
   $('.our-jobs-slider').slick({
@@ -70,8 +70,36 @@ $(document).ready(function () {
     $(this).toggleClass('active');
   });
 
-// Search field
-  $('.search-field').click(function() {
-		$('.search-field').toggleClass('active-search');
-	});
+  // Search field
+  $('.search-field').click(function () {
+    $('.search-field').toggleClass('active-search');
+  });
+
+  // Progress bar
+  $(".progress-bar").each(function(){
+    var bar = $(this).find(".bar");
+    var val = $(this).find("span");
+    var per = parseInt( val.text(), 10);
+    var $right = $('.right');
+    var $back = $('.back');
+  
+    $({p:0}).animate({p:per}, {
+      duration: 3000,
+      step: function(p) {
+        bar.css({
+          transform: "rotate("+ (45+(p*1.8)) +"deg)"
+        });
+        val.text(p|0);
+      }
+    }).delay( 200 );
+    
+    if (per == 100) {
+       $back.delay( 2600 ).animate({'top': '18px'}, 200 );
+    }
+        
+    if (per == 0) {
+      $('.left').css('background', 'gray');
+    }
+      
+  });
 });

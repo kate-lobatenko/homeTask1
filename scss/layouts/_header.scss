@@ -30,7 +30,7 @@
     color: $white;
     font-weight: 600;
     font-style: normal;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 16.8px;
     text-transform: uppercase;
     border-radius: 5px;
@@ -45,6 +45,7 @@
     background: $active-link-bg-color;
     border-bottom: 3px solid $active-link-border-color;
     transition: all $animation-speed ease-in-out 0s;
+    font-size: 14px;
 }
 
 .col-search {

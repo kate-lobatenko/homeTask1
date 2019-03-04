@@ -685,10 +685,58 @@ input[type='submit'] {
   line-height: 20px; }
 
 .progress-bar {
-  max-width: 120px; }
+  background: transparent;
+  height: auto;
+  position: relative;
+  max-width: 120px;
+  display: inline-block;
+  text-align: center; }
 
 .list-progressbars li {
-  display: inline-block; }
+  display: inline-block;
+  width: 49%;
+  height: 90px;
+  text-align: center; }
+
+.barOverflow {
+  position: relative;
+  overflow: hidden;
+  width: 120px;
+  height: 58px; }
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 15px solid #76c7c0;
+  border-bottom-color: #e2534b;
+  border-right-color: #e2534b;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.progress-bar > .left {
+  visibility: hidden; }
+
+.progress-bar > .right {
+  visibility: hidden; }
+
+.back {
+  display: none; }
+
+.tag {
+  color: #7f8c8c;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 36px;
+  position: absolute;
+  top: 20px;
+  left: 2px;
+  right: 0; }
 
 .clients-slider {
   width: 100%; }
@@ -743,6 +791,11 @@ input[type='submit'] {
     font-size: 16px;
     font-weight: 400;
     line-height: 25.6px; }
+    @media all and (max-width: 600px) {
+      .album-banner .desc-data {
+        padding: 4px 9px;
+        font-size: 12px;
+        line-height: 1.2; } }
   .album-banner h3 {
     font-size: 50px;
     font-weight: 900;
@@ -755,6 +808,9 @@ input[type='submit'] {
       max-height: 50px;
       overflow: hidden;
       display: inline-block; }
+      @media all and (max-width: 600px) {
+        .album-banner h3 a {
+          font-size: 16px; } }
   .album-banner .slick-slide img {
     width: 100%;
     height: 100%;
@@ -780,6 +836,10 @@ input[type='submit'] {
     background: #e5645d;
     border-radius: 0 5px 5px 0;
     border-bottom: 3px solid #E2534B; }
+    @media all and (max-width: 600px) {
+      .album-banner .slick-prev,
+      .album-banner .slick-next {
+        top: 25%; } }
     .album-banner .slick-prev:before,
     .album-banner .slick-next:before {
       font-size: 40px;
@@ -814,6 +874,9 @@ input[type='submit'] {
     top: 40%;
     z-index: 10;
     display: block; }
+    @media all and (max-width: 600px) {
+      .album-banner .text-data {
+        top: 0; } }
   .album-banner .slick-dots {
     position: relative;
     bottom: 0;
@@ -854,7 +917,7 @@ input[type='submit'] {
   color: #fff;
   font-weight: 600;
   font-style: normal;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 16.8px;
   text-transform: uppercase;
   border-radius: 5px; }
@@ -866,7 +929,8 @@ input[type='submit'] {
   background: #62A29E;
   border-bottom: 3px solid #528B86;
   -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s; }
+  transition: all 0.3s ease-in-out 0s;
+  font-size: 14px; }
 
 .col-search {
   -webkit-box-align: center;
