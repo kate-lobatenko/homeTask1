@@ -62,11 +62,34 @@
         height: 50px;
         background: $hover-link-bg-color;
         border-radius: 0 5px 5px 0;
+        border-bottom: 3px solid $dark-red;
 
         &:before {
             font-size: 40px;
             font-weight: 400;
         }
+    }
+
+    .slick-dots .slick-active {
+        background: $hover-link-bg-color;
+    }
+
+    .slick-dots li {
+        vertical-align: middle;
+        width: 60px;
+        height: 5px;
+        background: $slick-lines-bg;
+        margin: 0 3px;
+        padding: 0;
+        cursor: pointer;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .slick-dots button {
+        visibility: hidden;
     }
 
     .content-box {

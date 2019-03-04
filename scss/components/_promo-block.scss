@@ -1,7 +1,6 @@
 .our-jobs {
     margin-top: 70px;
     padding-top: 70px;
-    background-color: $block-bg;
     overflow: hidden;
 
     &:hover {
@@ -83,7 +82,8 @@
 
 .promo-block {
     position: relative;
-
+    background-color: $block-bg;
+    
     &:before {
         content: "";
         display: block;

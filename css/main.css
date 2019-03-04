@@ -556,7 +556,6 @@ input[type='submit'] {
 .our-jobs {
   margin-top: 70px;
   padding-top: 70px;
-  background-color: #ececec;
   overflow: hidden; }
   .our-jobs:hover .slick-prev,
   .our-jobs:hover .slick-next {
@@ -621,7 +620,8 @@ input[type='submit'] {
   display: none !important; }
 
 .promo-block {
-  position: relative; }
+  position: relative;
+  background-color: #ececec; }
   .promo-block:before {
     content: "";
     display: block;
@@ -771,11 +771,26 @@ input[type='submit'] {
     width: 50px;
     height: 50px;
     background: #e5645d;
-    border-radius: 0 5px 5px 0; }
+    border-radius: 0 5px 5px 0;
+    border-bottom: 3px solid #E2534B; }
     .album-banner .slick-prev:before,
     .album-banner .slick-next:before {
       font-size: 40px;
       font-weight: 400; }
+  .album-banner .slick-dots .slick-active {
+    background: #e5645d; }
+  .album-banner .slick-dots li {
+    vertical-align: middle;
+    width: 60px;
+    height: 5px;
+    background: #b0b8b9;
+    margin: 0 3px;
+    padding: 0;
+    cursor: pointer; }
+    .album-banner .slick-dots li:before {
+      display: none; }
+  .album-banner .slick-dots button {
+    visibility: hidden; }
   .album-banner .content-box {
     background-color: #7f8c8c;
     width: 100%;
