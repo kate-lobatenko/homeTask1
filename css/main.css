@@ -730,6 +730,10 @@ input[type='submit'] {
   height: 520px;
   max-height: 520px;
   overflow: hidden; }
+  @media all and (max-width: 600px) {
+    .album-banner {
+      height: 320px;
+      max-height: 320px; } }
   .album-banner .desc-data {
     background-color: #000;
     opacity: 0.5;
@@ -755,6 +759,9 @@ input[type='submit'] {
     width: 100%;
     height: 100%;
     position: relative; }
+  @media all and (max-width: 600px) {
+    .album-banner .slick-slide > div {
+      height: 100%; } }
   .album-banner .slick-prev {
     left: 0; }
     .album-banner .slick-prev:before {
@@ -797,6 +804,9 @@ input[type='submit'] {
     height: 500px;
     display: block;
     position: relative; }
+    @media all and (max-width: 600px) {
+      .album-banner .content-box {
+        height: 100%; } }
   .album-banner .text-data {
     position: absolute;
     left: 0;
@@ -1043,6 +1053,9 @@ button.active-page {
   background: #ececec;
   width: 100%;
   padding: 28px 24px; }
+  @media all and (max-width: 1199px) {
+    .view-more-data {
+      text-align: center; } }
   .view-more-data .title {
     font-size: 30px;
     font-weight: 400;
@@ -1051,15 +1064,28 @@ button.active-page {
     margin-bottom: 0;
     margin-top: 0;
     font-weight: 600; }
+    @media all and (max-width: 1199px) {
+      .view-more-data .title {
+        margin-bottom: 10px;
+        text-align: center; } }
   .view-more-data .text {
     color: #777777;
     font-size: 13px;
     font-weight: 400;
     line-height: 20.8px; }
+    @media all and (max-width: 1199px) {
+      .view-more-data .text {
+        margin-bottom: 10px; } }
   .view-more-data .btn-view-more {
     float: right; }
+    @media all and (max-width: 1199px) {
+      .view-more-data .btn-view-more {
+        float: none; } }
   .view-more-data .text-wrapper {
     float: left; }
+    @media all and (max-width: 1199px) {
+      .view-more-data .text-wrapper {
+        float: none; } }
 
 .services {
   margin-bottom: 50px;
