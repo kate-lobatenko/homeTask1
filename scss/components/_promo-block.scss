@@ -110,7 +110,7 @@
 .pros-list li {
     padding-bottom: 10px;
     font-size: 13px;
-    color: #777;
+    color: $text-color;
 
     .icon-arrow-right {
         width: 10px;
@@ -160,23 +160,32 @@
     padding: 5px;
     display: block;
     text-align: center;
+    color: $text-color;
+}
+
+.center-block {
+    margin-top: 35px;
 }
 
 .center-block h5 {
+    margin-top: 0;
     text-align: left;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-size: 13px;
-    color: #777;
-    margin: 10px 0;
+    color: $text-color;
     line-height: 20px;
     font-weight: 400;
 }
 
 .caption small {
-    color: #777777;
+    color: $text-color;
     font-size: 13px;
     font-style: italic;
     line-height: 24.7px;
     font-family: 'Open Sans', 'sans-serif';
     font-weight: 400;
+}
+
+.clients {
+    padding-bottom: 50px;
 }

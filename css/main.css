@@ -644,7 +644,7 @@ input[type='submit'] {
 .pros-list li {
   padding-bottom: 10px;
   font-size: 13px;
-  color: #777; }
+  color: #777777; }
   .pros-list li .icon-arrow-right {
     width: 10px;
     height: 12px;
@@ -684,14 +684,18 @@ input[type='submit'] {
 .user-link {
   padding: 5px;
   display: block;
-  text-align: center; }
+  text-align: center;
+  color: #777777; }
+
+.center-block {
+  margin-top: 35px; }
 
 .center-block h5 {
+  margin-top: 0;
   text-align: left;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-size: 13px;
-  color: #777;
-  margin: 10px 0;
+  color: #777777;
   line-height: 20px;
   font-weight: 400; }
 
@@ -702,6 +706,9 @@ input[type='submit'] {
   line-height: 24.7px;
   font-family: 'Open Sans', 'sans-serif';
   font-weight: 400; }
+
+.clients {
+  padding-bottom: 50px; }
 
 .progress-bar {
   background: transparent;
@@ -716,6 +723,9 @@ input[type='submit'] {
   width: 24%;
   height: 90px;
   text-align: center; }
+  @media all and (max-width: 1199px) {
+    .list-progressbars li {
+      width: 49%; } }
 
 .barOverflow {
   position: relative;
@@ -991,8 +1001,17 @@ input[type='submit'] {
   left: 0; }
 
 #footer {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 45px; }
+  #footer:before {
+    position: absolute;
+    top: 0;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    background: url("../sourceimages/bg-footer.png") 0 0 repeat-x; }
   #footer span,
   #footer h4,
   #footer a,
@@ -1001,6 +1020,13 @@ input[type='submit'] {
   #footer .footer-title {
     color: #3b6460;
     font-size: 20px; }
+  #footer .date {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    opacity: 0.5; }
 
 .footer-copyright {
   background-color: #6AB3AC;
@@ -1033,6 +1059,42 @@ input[type='submit'] {
   font-size: 13px;
   font-weight: 400;
   line-height: 23.4px; }
+
+.community li,
+.company-links li {
+  padding-left: 5px;
+  height: 25px;
+  position: relative; }
+  .community li:before,
+  .company-links li:before {
+    content: "\e907";
+    font-family: 'icomoon', 'sans-serif';
+    display: inline-block;
+    position: absolute;
+    position: absolute;
+    left: -10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1; }
+
+.blog-latest {
+  clear: both;
+  height: 70px;
+  margin-bottom: 20px; }
+
+.blog-latest > * {
+  display: table-cell;
+  vertical-align: middle;
+  float: none; }
+
+.blog-latest-img {
+  float: left;
+  border-radius: 5px;
+  margin-right: 15px; }
+
+.footer-col-4 i {
+  font-weight: 400; }
 
 .portfolio-page {
   min-height: auto; }
