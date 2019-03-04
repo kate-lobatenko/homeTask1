@@ -1084,7 +1084,12 @@ button.active-page {
   .services .description {
     line-height: 20.8px;
     min-height: 80px;
-    max-height: 80px; }
+    max-height: 80px;
+    overflow: hidden; }
+
+@media all and (max-width: 991px) {
+  .service-item {
+    margin-bottom: 40px; } }
 
 #wrapper {
   width: 100%;
