@@ -788,10 +788,13 @@ input[type='submit'] {
 .line {
   position: absolute;
   top: 49%;
-  width: 75%;
+  width: calc(100% - 150px);
   height: 1px;
   background-color: #E1E2E2;
   left: 15%; }
+  @media all and (max-width: 767px) {
+    .line {
+      display: none; } }
   .line:before {
     content: "";
     display: inline-block;
@@ -1157,6 +1160,10 @@ input[type='submit'] {
   .nav-list li a:hover {
     background: #e5645d;
     border-bottom: 3px solid #e2534b; }
+    @media all and (max-width: 991px) {
+      .nav-list li a:hover {
+        background: transparent;
+        border-bottom: transparent; } }
 
 .nav-list li.active a {
   background: #62A29E;
@@ -1196,6 +1203,9 @@ input[type='submit'] {
 
 .parent:hover .second-level {
   display: block; }
+  @media all and (max-width: 991px) {
+    .parent:hover .second-level {
+      display: none; } }
 
 li.child {
   color: #fff;
@@ -1331,8 +1341,16 @@ li.child {
   border-radius: 5px;
   margin-right: 15px; }
 
+@media all and (max-width: 991px) {
+  .footer-col-1 {
+    margin-bottom: 20px; } }
+
 .footer-col-4 i {
   font-weight: 400; }
+
+@media all and (max-width: 991px) {
+  .footer-col-4 {
+    margin-top: 20px; } }
 
 .portfolio-page {
   min-height: auto; }

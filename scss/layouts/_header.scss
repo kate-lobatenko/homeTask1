@@ -117,6 +117,11 @@
     &:hover {
         background: $hover-link-bg-color;
         border-bottom: 3px solid $link-border-color;
+
+        @media all and (max-width: 991px) {
+            background: transparent;
+            border-bottom: transparent;
+        }
     }
 }
 
@@ -157,6 +162,9 @@
 .parent:hover {
     .second-level {
         display: block;
+        @media all and (max-width: 991px) {
+            display: none;
+        }
     }
 }
 

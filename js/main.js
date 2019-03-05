@@ -69,8 +69,8 @@ $(document).ready(function () {
   });
 
   // Add active for links on header's navbar
-  $('.navigation li').not('.navigation li.col-search').click(function () {
-    $('.navigation li').not(this).removeClass('active');
+  $('.nav-list li').not('.nav-list li.col-search').click(function () {
+    $('.nav-list li').not(this).removeClass('active');
     $(this).toggleClass('active');
   });
 

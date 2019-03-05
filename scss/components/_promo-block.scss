@@ -141,10 +141,14 @@
 .line {
     position: absolute;
     top: 49%;
-    width: 75%;
+    width: calc(100% - 150px);
     height: 1px;
     background-color: #E1E2E2;
     left: 15%;
+
+    @media all and (max-width: 767px) {
+        display: none;
+    }
 
     &:before {
         content: "";
