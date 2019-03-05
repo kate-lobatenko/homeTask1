@@ -40,6 +40,11 @@
     height: 50px;
     line-height: 50px;
 
+    @media all and (max-width: 600px) {
+        height: auto;
+        text-align: center;
+    }
+
     .icon,
     p {
         color: $white;
@@ -84,6 +89,7 @@
     padding-left: 5px;
     height: 25px;
     position: relative;
+
     &:before {
         content: "\e907";
         font-family: 'icomoon', 'sans-serif';

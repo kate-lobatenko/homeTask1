@@ -27,6 +27,14 @@
     }
 }
 
+.main-menu {
+    @media all and (max-width: 600px) {
+        display: inline-block;
+        width: 50%;
+        padding-right: 0;
+    }
+}
+
 .hamburger {
     display: none;
 
@@ -45,10 +53,24 @@
 
 .col-logo {
     justify-content: center;
+    padding-left: 0;
+
+    @media all and (max-width: 600px) {
+        padding-left: 15px;
+        display: inline-block;
+        width: 49%;
+        vertical-align: middle;
+        line-height: 80px;
+        height: 80px;
+
+        .logo {
+            display: inline-block;
+        }
+    }
+
 }
 
 .nav-list {
-    justify-content: right;
 
     @media all and (max-width: 991px) {
         display: block;
@@ -63,11 +85,6 @@
         text-align: center;
         background: $darker-turquoise;
     }
-}
-
-
-.col-logo {
-    padding-left: 0;
 }
 
 .nav-list li {
@@ -108,6 +125,7 @@
     border-bottom: 3px solid $active-link-border-color;
     transition: all $animation-speed ease-in-out 0s;
     font-size: 14px;
+
     @media all and (max-width: 991px) {
         font-size: 18px;
         background: transparent;
