@@ -27,33 +27,37 @@
 		<header id="header">
 			<div class="container">
 				<div class="row">
-					<div class="col-logo col-2">
+					<div class="col-logo col-xs-6 col-sm-6 col-md-2 col-lg-2">
 						<h1 class="logo" title="MODUSversus"><a href="index.html"><img src="./sourceimages/logo.png" alt="MODUSversus"></a></h1>
 					</div>
-					<div class="main-menu col-9">
-						<a class="mobile-menu" href="#"></a>
-						<nav id="main-nav">
-							<ul class="navigation">
+					<div class="main-menu col-xs-6 col-sm-6 col-md-10 col-lg-10">
+						<button class="hamburger hamburger--squeeze" type="button">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+						<nav id="navigation">
+							<ul class="nav-list">
 								<li class="active"><a href="#" title="Home">Home</a></li>
 								<li><a href="#" title="About">About</a></li>
 								<li><a href="#" title="Services">Services</a></li>
-								<li><a href="web/portfolio.html" title="Portfolio">Portfolio</a>
-									<ul class="parent second-level">
-										<li class="child">Portfolio 2 column page</li>
-										<li class="child">Portfolio 2 column page</li>
-										<li class="child">Portfolio 2 column page</li>
+								<li class="parent"><a href="web/portfolio.html" title="Portfolio">Portfolio</a>
+									<ul class="second-level">
+										<li class="child"><a href="#" title="Portfolio 2 column page">Portfolio 2 column page</a></li>
+										<li class="child"><a href="#" title="Portfolio 2 column page">Portfolio 2 column page</a></li>
+										<li class="child"><a href="#" title="Portfolio 2 column page">Portfolio 2 column page</a></li>
 									</ul>
 								</li>
 								<li><a href="#" title="Blog">Blog</a></li>
 								<li><a href="#" title="Features">Features</a></li>
 								<li><a href="#" title="Contacts">Contacts</a></li>
+								<li class="col-search">
+									<a class="search-field" href="#" title="Search"><span class="icon-search"><span>
+												<input type="text" name="label" id="search" autocomplete="on" placeholder="Search...">
+									</a>
+								</li>
 							</ul>
 						</nav>
-					</div>
-					<div class="col-search">
-						<a class="search-field" href="#" title="Search"><span class="icon-search"><span>
-									<input type="text" name="label" id="search" autocomplete="on" placeholder="Search...">
-						</a>
 					</div>
 				</div>
 			</div>
@@ -270,8 +274,7 @@
 								</li>
 							</ul>
 						</div>
-
-						<div class="col-sm-12 col-md-6 col-lg-3 client-reviews right-block">
+						<div class="col-md-12 col-lg-3 client-reviews right-block">
 							<h4 class="title">What Client's Say?</h4>
 							<div class="row">
 								<div class="client-reviews">
@@ -395,10 +398,10 @@
 					<p><span id="year"></span> ModusVersus</p>
 				</div>
 				<div class="footer-social col-md-3 float-xs-right">
-					<a href="https://www.facebook.com/"><span class="icon icon-facebook"><span></a>
-					<a href="https://plus.google.com/"><span class="icon icon-google"><span></a>
-					<a href="https://twitter.com/"><span class="icon icon-twitter"><span></a>
-					<a href="https://rss.com/"><span class="icon icon-rss"><span></a>
+					<a href="https://www.facebook.com/" target="_blank"><span class="icon icon-facebook"><span></a>
+					<a href="https://plus.google.com/" target="_blank"><span class="icon icon-google"><span></a>
+					<a href="https://twitter.com/" target="_blank"><span class="icon icon-twitter"><span></a>
+					<a href="https://rss.com/" target="_blank"><span class="icon icon-rss"><span></a>
 				</div>
 			</div>
 		</div>

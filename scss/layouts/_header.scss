@@ -1,30 +1,85 @@
+.open#navigation {
+    display: block;
+}
+
 #header {
     background: url("../sourceimages/bg-header.png") $base-background-color repeat-x 100% 100%;
     height: 80px;
     line-height: 80px;
 }
 
-.navigation,
-#main-nav {
+.col-logo,
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list,
+#navigation {
     height: 100%;
 }
 
-.col-logo,
-.navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#navigation {
+    @media all and (max-width: 991px) {
+        display: none;
+        z-index: 10;
+        width: 100%;
+    }
 }
+
+.hamburger {
+    display: none;
+
+    @media all and (max-width: 991px) {
+        display: inline-block;
+        float: right;
+        z-index: 101;
+        position: relative;
+        height: 100%;
+        padding-bottom: 0;
+        padding-top: 0;
+        line-height: 96px;
+        height: 80px;
+    }
+}
+
+.col-logo {
+    justify-content: center;
+}
+
+.nav-list {
+    justify-content: right;
+
+    @media all and (max-width: 991px) {
+        display: block;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        height: 100vh;
+        padding: 0;
+        text-align: center;
+        background: $darker-turquoise;
+    }
+}
+
 
 .col-logo {
     padding-left: 0;
 }
 
-.navigation li {
-    padding: 0 13px;
+.nav-list li {
+    padding: 0 1%;
+    position: relative;
+
+    @media all and (max-width: 991px) {
+        display: block;
+    }
 }
 
-.navigation li a {
+.nav-list li a {
     text-decoration: none;
     padding: 8px 13px;
     color: $white;
@@ -35,17 +90,30 @@
     text-transform: uppercase;
     border-radius: 5px;
 
+    @media all and (max-width: 991px) {
+        font-size: 18px;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+    }
+
     &:hover {
         background: $hover-link-bg-color;
         border-bottom: 3px solid $link-border-color;
     }
 }
 
-.navigation li.active a {
+.nav-list li.active a {
     background: $active-link-bg-color;
     border-bottom: 3px solid $active-link-border-color;
     transition: all $animation-speed ease-in-out 0s;
     font-size: 14px;
+    @media all and (max-width: 991px) {
+        font-size: 18px;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+    }
 }
 
 .col-search {
@@ -54,8 +122,36 @@
     display: flex;
 }
 
-.parent.second-level {
+.parent .second-level {
     display: none;
+}
+
+.second-level {
+    position: absolute;
+    top: 65px;
+    z-index: 1;
+    min-width: 187px;
+    background-color: $dark-red;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.parent:hover {
+    .second-level {
+        display: block;
+    }
+}
+
+li.child {
+    color: $white;
+    transition: all $animation-speed ease-in-out 0s;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+
+    a {
+        text-transform: initial;
+    }
 }
 
 .search-field {
@@ -81,6 +177,11 @@
 .active-search #search {
     display: inline-block;
     position: absolute;
-    top: 100%;
+    top: 35px;
     left: 0;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    z-index: 10;
 }

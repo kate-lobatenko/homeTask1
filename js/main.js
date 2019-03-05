@@ -69,7 +69,7 @@ $(document).ready(function () {
   });
 
   // Add active for links on header's navbar
-  $('.navigation li').click(function () {
+  $('.navigation li').not('.navigation li.col-search').click(function () {
     $('.navigation li').not(this).removeClass('active');
     $(this).toggleClass('active');
   });
@@ -77,6 +77,12 @@ $(document).ready(function () {
   // Search field
   $('.search-field').click(function () {
     $('.search-field').toggleClass('active-search');
+  });
+
+  // Burger menu
+  $('.hamburger').click(function () {
+    $(this).toggleClass('is-active');
+    $('#navigation').toggleClass('open');
   });
 
   // Progress bar
