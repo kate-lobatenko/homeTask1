@@ -1,8 +1,7 @@
 .album-banner {
     text-align: center;
     height: 520px;
-    max-height: 520px;
-    overflow: hidden;
+    max-height: 550px;
 
     @media all and (max-width: 600px) {
         height: 320px;
@@ -148,6 +147,8 @@
         z-index: 1;
         clear: both;
         float: none;
+        margin-bottom: 20px;
+        margin-top: 14px;
     }
 
     .slick-slide {

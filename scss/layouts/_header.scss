@@ -98,7 +98,7 @@
 
 .nav-list li a {
     text-decoration: none;
-    padding: 8px 13px;
+    padding: 5px 14px;
     color: $white;
     font-weight: 600;
     font-style: normal;
@@ -145,6 +145,23 @@
     display: flex;
 }
 
+.parent {
+    position: relative;
+}
+
+.parent:before {
+    content: "\e90c";
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 5px;
+    color: $white;
+    font-family: 'icomoon', 'sans-serif';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 80px;
+}
+
 .parent .second-level {
     display: none;
 }
@@ -162,6 +179,7 @@
 .parent:hover {
     .second-level {
         display: block;
+
         @media all and (max-width: 991px) {
             display: none;
         }
@@ -175,8 +193,15 @@ li.child {
     line-height: 30px;
     padding: 0;
 
+    &:hover a {
+        background: $turquoise;
+    }
+
     a {
         text-transform: initial;
+        padding: 5px;
+        width: 100%;
+        display: inline-block;
     }
 }
 

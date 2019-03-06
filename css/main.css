@@ -810,6 +810,8 @@ input[type='submit'] {
 
 .center-block {
   margin-top: 35px; }
+  .center-block a {
+    text-decoration: underline; }
 
 .center-block h5 {
   margin-top: 0;
@@ -985,8 +987,7 @@ input[type='submit'] {
 .album-banner {
   text-align: center;
   height: 520px;
-  max-height: 520px;
-  overflow: hidden; }
+  max-height: 550px; }
   @media all and (max-width: 600px) {
     .album-banner {
       height: 320px;
@@ -1091,7 +1092,9 @@ input[type='submit'] {
     bottom: 0;
     z-index: 1;
     clear: both;
-    float: none; }
+    float: none;
+    margin-bottom: 20px;
+    margin-top: 14px; }
   @media all and (max-width: 600px) {
     .album-banner .slick-slide {
       height: 300px; } }
@@ -1182,7 +1185,7 @@ input[type='submit'] {
 
 .nav-list li a {
   text-decoration: none;
-  padding: 8px 13px;
+  padding: 5px 14px;
   color: #fff;
   font-weight: 600;
   font-style: normal;
@@ -1228,6 +1231,21 @@ input[type='submit'] {
   display: -ms-flexbox;
   display: flex; }
 
+.parent {
+  position: relative; }
+
+.parent:before {
+  content: "\e90c";
+  position: absolute;
+  display: inline-block;
+  width: 8px;
+  height: 5px;
+  color: #fff;
+  font-family: 'icomoon', 'sans-serif';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 80px; }
+
 .parent .second-level {
   display: none; }
 
@@ -1253,8 +1271,13 @@ li.child {
   height: 30px;
   line-height: 30px;
   padding: 0; }
+  li.child:hover a {
+    background: #76C7C0; }
   li.child a {
-    text-transform: initial; }
+    text-transform: initial;
+    padding: 5px;
+    width: 100%;
+    display: inline-block; }
 
 .search-field {
   color: #fff;
