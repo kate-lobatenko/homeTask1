@@ -4,7 +4,7 @@
 
 #header {
     background: url("../sourceimages/bg-header.png") $base-background-color repeat-x 100% 100%;
-    height: 80px;
+    min-height: 80px;
     line-height: 80px;
 }
 
