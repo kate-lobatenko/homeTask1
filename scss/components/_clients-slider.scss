@@ -81,3 +81,32 @@
     padding-left: 15px;
     overflow: hidden;
 }
+
+.clients-title .title:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    background: $line-bg;
+    height: 1px;
+    display: inline-block;
+    top: 8px;
+
+    @media all and (max-width: 991px) {
+        width: 80%;
+    }
+
+    @media all and (max-width: 480px) {
+        width: 100%;
+    }
+}
+
+.clients-title .title:after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    background-color: $line-bg;
+    position: absolute;
+    top: 5px;
+}
