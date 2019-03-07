@@ -97,11 +97,22 @@ header {
     padding: 0 8px;
     position: relative;
 
+    &:hover a {
+        background: $hover-link-bg-color;
+        border-bottom: 3px solid $link-border-color;
+
+        @media all and (max-width: 991px) {
+            background: transparent;
+            border-bottom: transparent;
+        }
+    }
+
     @media all and (max-width: 991px) {
         display: block;
     }
 }
 
+.nav-list li.parent.active a,
 .nav-list li a {
     text-decoration: none;
     padding: 5px 14px;
@@ -156,10 +167,13 @@ header {
     padding-left: 15px;
 }
 
-.nav-list {
-    .parent a {
-        padding-left: 20px;
-    }
+.nav-list li.parent.active a,
+.nav-list .parent a {
+    padding-left: 20px;
+}
+
+li.parent.active .child a {
+    text-transform: initial;
 }
 
 .parent:before {
@@ -184,7 +198,7 @@ header {
     position: absolute;
     top: 65px;
     z-index: 1;
-    min-width: 187px;
+    min-width: 200px;
     background-color: $dark-red;
     border-radius: 5px;
     padding: 5px;

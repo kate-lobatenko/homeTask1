@@ -1196,10 +1196,18 @@ header .icon-search {
 .nav-list li {
   padding: 0 8px;
   position: relative; }
+  .nav-list li:hover a {
+    background: #e5645d;
+    border-bottom: 3px solid #e2534b; }
+    @media all and (max-width: 991px) {
+      .nav-list li:hover a {
+        background: transparent;
+        border-bottom: transparent; } }
   @media all and (max-width: 991px) {
     .nav-list li {
       display: block; } }
 
+.nav-list li.parent.active a,
 .nav-list li a {
   text-decoration: none;
   padding: 5px 14px;
@@ -1211,15 +1219,18 @@ header .icon-search {
   text-transform: uppercase;
   border-radius: 5px; }
   @media all and (max-width: 991px) {
+    .nav-list li.parent.active a,
     .nav-list li a {
       font-size: 18px;
       background: transparent;
       border: 0;
       border-radius: 0; } }
+  .nav-list li.parent.active a:hover,
   .nav-list li a:hover {
     background: #e5645d;
     border-bottom: 3px solid #e2534b; }
     @media all and (max-width: 991px) {
+      .nav-list li.parent.active a:hover,
       .nav-list li a:hover {
         background: transparent;
         border-bottom: transparent; } }
@@ -1252,8 +1263,12 @@ header .icon-search {
   position: relative;
   padding-left: 15px; }
 
+.nav-list li.parent.active a,
 .nav-list .parent a {
   padding-left: 20px; }
+
+li.parent.active .child a {
+  text-transform: initial; }
 
 .parent:before {
   content: "\e90c";
@@ -1275,7 +1290,7 @@ header .icon-search {
   position: absolute;
   top: 65px;
   z-index: 1;
-  min-width: 187px;
+  min-width: 200px;
   background-color: #E2534B;
   border-radius: 5px;
   padding: 5px; }
