@@ -5,15 +5,33 @@
 $gray: #ccc;
 $black: #000;
 $white: #fff;
+$light-gray : #7F8C8C;
+$dark-gray : #3F4646;
+$turquoise : #76C7C0;
 $light-blue: blue;
-$brand-color: yellow;
-$brand-color2: green;
-$brand-color3: pink;
-$red: red;
+$brand-color: #777777; // brand text color
+$brand-color2: #7f8c8c; // brand headings color
+$brand-color3: #76c7c0; // brand background color
 $light-turquoise: #76c7c0;
+$darker-turquoise: #62A29E;
+$dark-turquoise  : #528B86;
+$red             : #E8645A;
+$dark-red        : #E2534B;
+$light-blue      : #76CACA;
+$icon-color      : #62BDBD;
+$icon-color-hover: $dark-red;
+$line-bg: #e1e2e2;
 
-$base-font-sans-serif: 'Open Sans', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
-$base-font-serif: 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
+$base-font-sans-serif: 'Open Sans',
+'Arial',
+'Helvetica Neue',
+'Helvetica',
+sans-serif;
+$base-font-serif: 'Times New Roman',
+'Times',
+'Baskerville',
+'Georgia',
+serif;
 
 // Body
 $base-text-color: $brand-color;
@@ -26,14 +44,22 @@ $vertical-rhythm: ($line-height-base * 1em);
 
 $base-min-width: 320px;
 
-// Liks
+// Links
 $base-link-color: $red;
+$link-border-color: #e2534b;
+$hover-link-bg-color: #e5645d;
+$hover-link-border-color: #e2534b;
+$active-link-bg-color: #62A29E;
+$active-link-border-color: #528B86;
+$slick-lines-bg: #b0b8b9;
 
 // Buttons 
 $btn-color: $white;
-$btn-background: $light-turquoise;
+$btn-background: #e8645a;
 $btn-padding: 0.4em 0.7em !default;
 $btn-font-size: inherit !default;
+$btn-read-more-color: #76c7c0;
+$btn-slick: #98a3a3;
 
 // Forms
 $form-element-padding: $btn-padding !default;
@@ -54,3 +80,28 @@ $headings-color: $brand-color2;
 
 
 $animation-speed: 0.3s;
+
+// Album banner
+$content-bg: #7f8c8c;
+
+// View more block
+$block-bg: #ececec;
+$text-color: #777;
+
+// Main
+$bg-main-color: #f3f3f3;
+$default-margin: 50px;
+
+// Services
+$bg-card-item: #f8f8f8;
+$color-icon: #62bdbd;
+$service-title-color: #7f8c8c;
+
+// Promo block
+$title-promo-color: #e1524b;
+$promo-text-color: #969696;
+$our-jobs-slider-bg: #7f8c8c;
+
+// Footer
+$footer-copyright-bg: #6AB3AC;
+$footer-title-color: #3b6460;

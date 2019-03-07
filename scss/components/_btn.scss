@@ -1,0 +1,38 @@
+.buttn {
+    border-bottom: 3px solid $link-border-color;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    background: $btn-background;
+    color: $white;
+    font-size: 14px;
+    line-height: 50px;
+    border-radius: 5px;
+
+    &:hover {
+        color: $white;
+        transition: all $animation-speed ease;
+    }
+}
+
+.btn-view-more {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &:hover {
+        background: $btn-read-more-color;
+        border-bottom: 3px solid $active-link-border-color;
+    }
+}
+
+.btn-read-more {
+    background: $btn-read-more-color;
+    border-bottom: 3px solid $active-link-border-color;
+
+    &:hover {
+        background: $btn-background;
+        border-bottom: 3px solid $link-border-color;
+    }
+}

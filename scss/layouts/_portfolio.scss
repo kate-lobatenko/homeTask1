@@ -1,0 +1,225 @@
+.portfolio-heading {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.portfolio-page {
+	min-height: auto;
+
+	.content {
+		padding: 0 10px;
+		width: 100%;
+	}
+
+	.col-6 {
+		@include padding(0);
+		max-width: 570px;
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		margin-bottom: 25px;
+		text-align: left;
+		line-height: 20px;
+		overflow: hidden;
+	}
+
+	img {
+		max-width: 100%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	h4 {
+		margin-bottom: 15px;
+	}
+
+	a {
+		span {
+			margin-left: 20px;
+			color: $light-gray;
+			font-weight: 600;
+		}
+	}
+
+	a:hover>span {
+		color: $red;
+	}
+
+	a:hover>i {
+		background-color: $red;
+	}
+
+	.icon-chain {
+		@include padding(8px);
+		width: 40px;
+		height: 40px;
+		font-size: 25px;
+		background-color: $dark-turquoise;
+		color: $white;
+		border-radius: 5px;
+		font-weight: 100;
+		display: inline-block;
+		@media all and (max-width:459px) {
+			margin-left: 0;
+		}
+	}
+
+	@media only screen and (min-width:1000px) {
+		img {
+			height: 270px;
+		}
+
+		.right {
+			margin-right: 0;
+			padding-left: 15px;
+		}
+
+		.col-6 {
+			height: 270px;
+			margin-bottom: 35px;
+		}
+
+		h4 {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.breadcumbs-holder {
+	height: 80px;
+	line-height: 80px;
+	padding-left: 10px;
+	background-color: #ECECEC;
+	color: #7F8C8C;
+	display: block;
+	width: 100%;
+}
+
+.breadcumbs {
+	float: right;
+
+	a {
+		color: #777;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+}
+
+.portfolio-nav {
+	line-height: 50px;
+	margin: 10px 0;
+
+	button {
+		@extend .buttn;
+		@include padding(10px 12px);
+		width: auto;
+		height: 35px;
+		margin-right: 5px;
+		background-color: #9BA3A3;
+		border-bottom: 3px solid $light-gray;
+		line-height: 1;
+
+		&:hover {
+			background-color: $darker-turquoise;
+			border-bottom: 3px solid $dark-turquoise;
+		}
+	}
+
+	@media only screen and (min-width:1000px) {
+		margin: 0;
+		text-align: left;
+		height: 110px;
+		line-height: 110px;
+
+		button {
+			margin-right: 15px;
+		}
+	}
+}
+
+.link {
+	@media only screen and (min-width: 1000px) {
+		position: relative;
+		bottom: -50px;
+	}
+
+	@media all and (max-width: 999px) {
+		bottom: 0;
+		margin-top: 20px;
+	}
+
+	@media all and (max-width:459px) {
+		text-align: center;
+	}
+}
+
+.btn-details {
+	@extend .buttn;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	margin: 10px 0;
+	background-color: $light-blue;
+	border-bottom: 3px solid $icon-color;
+
+	&:hover {
+		background-color: $red;
+		border-bottom: 3px solid $dark-red;
+	}
+
+	@media all and (max-width:459px) {
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	@media only screen and (min-width:460px) {
+		float: right;
+		margin: 0;
+	}
+
+	@media only screen and (min-width:1000px) {
+		float: right;
+	}
+}
+
+.page-nav {
+	@include padding(30px 0);
+	line-height: 50px;
+	margin-bottom: 40px;
+	text-align: center;
+
+	button {
+		@extend .buttn;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		margin-right: 10px;
+		font-size: 16px;
+		font-weight: 900;
+		background-color: #9BA3A3;
+		border-bottom: 3px solid $light-gray;
+
+		&:hover {
+			background-color: $red;
+			border-bottom: 3px solid $dark-red;
+		}
+	}
+
+	.icon {
+		@include padding(0);
+		font-size: 16px;
+		color: $white;
+	}
+}
+
+button.active-page {
+	background-color: #649792;
+	border-bottom: 0 3px $dark-turquoise;
+}

@@ -1,26 +1,419 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Project title</title>
+	<title>MODUSversus</title>
+
+	<link rel="icon" type="image/x-icon" href="./sourceimages/favicons/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="./sourceimages/favicons/simple-tree-07022019-152-314960.png">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/slick/slick.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css" />
+
 	<link media="all" rel="stylesheet" href="css/main.css">
-	<!-- <link rel="stylesheet" href="css/icomoon.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> -->
+
+	<link rel="stylesheet" href="css/icomoon/icomoon.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 </head>
+
 <body>
 	<div id="wrapper">
 		<header id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-logo col-xs-6 col-sm-6 col-md-2 col-lg-2">
+						<a class="logo" href="index.html"><img src="./sourceimages/logo.png" alt="MODUSversus"></a>
+					</div>
+					<div class="main-menu col-xs-6 col-sm-6 col-md-10 col-lg-10">
+						<button class="hamburger hamburger--squeeze" type="button">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+						<nav id="navigation" class="float-right">
+							<ul class="nav-list">
+								<li class="active"><a href="#" title="Home">Home</a></li>
+								<li><a href="#" title="About">About</a></li>
+								<li><a href="#" title="Services">Services</a></li>
+								<li class="parent"><a href="web/portfolio.html" title="Portfolio">Portfolio</a>
+									<ul class="second-level">
+										<li class="child"><a href="#" title="Portfolio 2 column page">Portfolio 2 column page</a></li>
+										<li class="child"><a href="#" title="Portfolio 2 column page">Portfolio 2 column page</a></li>
+										<li class="child"><a href="#" title="Portfolio 2 column page">Portfolio 2 column page</a></li>
+									</ul>
+								</li>
+								<li><a href="#" title="Blog">Blog</a></li>
+								<li><a href="#" title="Features">Features</a></li>
+								<li><a href="#" title="Contacts">Contacts</a></li>
+								<li class="col-search">
+									<a class="search-field" href="#" title="Search"><span class="icon-search"><span>
+												<input type="text" name="label" id="search" autocomplete="on" placeholder="Search...">
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
 		</header>
 
 		<main id="main">
+			<div class="album-banner col-banner clearfix">
+				<div class="content-box">
+					<div class="text-data">
+						<h3><a href="#">Vestibulum</a></h3>
+						<p class="desc-data">Maecenas tincidunt, augue et rutrum cordimentum,
+							<br>
+							libero lectus mattis orcim ut commodo.
+						</p>
+					</div>
+				</div>
+				<div class="content-box">
+					<div class="text-data">
+						<h3><a href="#">Vestibulum2</a></h3>
+						<p class="desc-data">Maecenas tincidunt, augue et rutrum cordimentum,
+							<br>
+							libero lectus mattis orcim ut commodo.
+						</p>
+					</div>
+					<img src="./sourceimages/bg-slide2.jpg" alt="bg-slide2">
+				</div>
+				<div class="content-box">
+					<div class="text-data">
+						<h3><a href="#">Vestibulum3</a></h3>
+						<p class="desc-data">Maecenas tincidunt, augue et rutrum cordimentum,
+							<br>
+							libero lectus mattis orcim ut commodo.
+						</p>
+					</div>
+					<img src="./sourceimages/bg-slide3.jpg" alt="bg-slide3">
+				</div>
+			</div>
 
+			<section class="view-more">
+				<div class="container">
+					<div class="row">
+						<div class="view-more-data">
+							<div class="text-wrapper">
+								<h1 class="title">Some of our top services</h1>
+								<p class="text">Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum
+									condimentum, libero lectus mattis orci, ut commodo. </p>
+							</div>
+							<a class="buttn btn-view-more" href="#">View more</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="services">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-md-6 col-lg-3 service-item">
+							<div class="card">
+								<div class="top-block">
+									<div class="icon-wrapper">
+										<span class="icon icon-thumbs-o-up"></span>
+									</div>
+									<h4 class="service-title">SUSPENDISSE</h4>
+								</div>
+								<div class="bottom-block">
+									<p class="description">Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat
+										vitae at, vehicula ut nunc.</p>
+									<a class="buttn btn-read-more" href="#promo-title">read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6 col-lg-3 service-item">
+							<div class="card">
+								<div class="top-block">
+									<div class="icon-wrapper">
+										<span class="icon icon-key"></span>
+									</div>
+									<h4 class="service-title">MAECENAS</h4>
+								</div>
+								<div class="bottom-block">
+									<p class="description">Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum
+										condimentum, libero lectus mattis orci, ut commodo.</p>
+									<a class="buttn btn-read-more" href="#promo-title">read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6 col-lg-3 service-item">
+							<div class="card">
+								<div class="top-block">
+									<div class="icon-wrapper">
+										<span class="icon icon-flag"></span>
+									</div>
+									<h4 class="service-title">ALIQUAM</h4>
+								</div>
+								<div class="bottom-block">
+									<p class="description">Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl,
+										vitae pulvinar dui tempor non.</p>
+									<a class="buttn btn-read-more" href="#promo-title">read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-md-6 col-lg-3 service-item">
+							<div class="card">
+								<div class="top-block">
+									<div class="icon-wrapper">
+										<span class="icon icon-lab"></span>
+									</div>
+									<h4 class="service-title">HABITASSE</h4>
+								</div>
+								<div class="bottom-block">
+									<p class="description">Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.</p>
+									<a class="buttn btn-read-more" href="#promo-title">read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="promo-block">
+				<div class="container our-jobs">
+					<div class="row">
+						<h2 id="promo-title" class="promo-title">WHY MODUS VERSUS?</h2>
+						<p class="promo-text">Capacitance cascading integer reflective interface data development high bus cache
+							dithering transponder.</p>
+						<div class="our-jobs-slider">
+							<div class="our-jobs-item">
+								<p class="slider-text">your image</p>
+								<img class="img-slider" src="sourceimages/bg-center-mode-carousel.png" alt="First image">
+							</div>
+							<div class="our-jobs-item">
+								<p class="slider-text">your image</p>
+								<img class="img-slider" src="sourceimages/bg-center-mode-carousel.png" alt="Second image">
+							</div>
+							<div class="our-jobs-item">
+								<p class="slider-text">your image</p><img class="img-slider" src="sourceimages/bg-center-mode-carousel.png" alt="Third image">
+							</div>
+							<div class="our-jobs-item">
+								<p class="slider-text">your image</p><img class="img-slider" src="sourceimages/bg-center-mode-carousel.png" alt="Third image">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container additional-info">
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-lg-3 left-block">
+							<h4 class="title">Why Choose Us?</h4>
+							<ul class="pros-list">
+								<li><span class="icon-arrow-right"></span>Quisque mass iqsum</li>
+								<li><span class="icon-arrow-right"></span>Maecenas lorem augue, egestas</li>
+								<li><span class="icon-arrow-right"></span>Cras vitae felis at lacus eleifend</li>
+								<li><span class="icon-arrow-right"></span>Etiam auctor diam pellentesque</li>
+								<li><span class="icon-arrow-right"></span>Nulla ac massa at dolor</li>
+								<li><span class="icon-arrow-right"></span>Condimentum eleifend vitae vitae</li>
+							</ul>
+						</div>
+
+						<div class="col-sm-12 col-md-6 col-lg-6 center-block">
+							<h5>Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus <a href="#">vehicula
+									mattis</a> . Nulla ac massa at dolor condimentum eleifend vitae vitae urna.</h5>
+							<ul class="list-progressbars">
+								<li>
+									<div class="progress-bar">
+										<div class="left"></div>
+										<div class="right">
+											<div class="back"></div>
+										</div>
+										<div class="barOverflow">
+											<div class="bar"></div>
+										</div>
+										<span class="tag">50</span>
+										<h4 class="progress-bar-title">SUSPENDISSE</h4>
+									</div>
+								</li>
+								<li>
+									<div class="progress-bar">
+										<div class="left"></div>
+										<div class="right">
+											<div class="back"></div>
+										</div>
+										<div class="barOverflow">
+											<div class="bar"></div>
+										</div>
+										<span class="tag">70</span>
+										<h4 class="progress-bar-title">MAECENAS</h4>
+									</div>
+								</li>
+								<li>
+									<div class="progress-bar">
+										<div class="left"></div>
+										<div class="right">
+											<div class="back"></div>
+										</div>
+										<div class="barOverflow">
+											<div class="bar"></div>
+										</div>
+										<span class="tag">80</span>
+										<h4 class="progress-bar-title">ALIQUAM</h4>
+									</div>
+								</li>
+								<li>
+									<div class="progress-bar">
+										<div class="left"></div>
+										<div class="right">
+											<div class="back"></div>
+										</div>
+										<div class="barOverflow">
+											<div class="bar"></div>
+
+										</div>
+										<span class="tag">100</span>
+										<h4 class="progress-bar-title">HABITASSE</h4>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-12 col-lg-3 client-reviews right-block">
+							<h4 class="title">What Client's Say?</h4>
+							<div class="row">
+								<div class="client-reviews">
+									<div class="item client-review">
+										<blockquote class="caption">
+											<p><small>Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus
+													vehicula mattis. Nulla ac massa at dolor condimentum.</small></p>
+											<a class="user-link" href="#">Jhon Doe</a>
+										</blockquote>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="clients">
+				<div class="container">
+					<div class="row">
+						<div class="clients-title">
+							<h3 class="title">
+								<span class="title-text">Our Happy Clients</span>
+							</h3>
+						</div>
+						<div class="clients-slider">
+							<div class="slider-item">
+								<img class="item-img" src="sourceimages/client-logo1.png" alt="Client1">
+							</div>
+							<div class="slider-item">
+								<img class="item-img" src="sourceimages/client-logo1.png" alt="Client2">
+							</div>
+							<div class="slider-item">
+								<img class="item-img" src="sourceimages/client-logo1.png" alt="Client3">
+							</div>
+							<div class="slider-item">
+								<img class="item-img" src="sourceimages/client-logo1.png" alt="Client4">
+							</div>
+							<div class="slider-item">
+								<img class="item-img" src="sourceimages/client-logo1.png" alt="Client5">
+							</div>
+							<div class="slider-item">
+								<img class="item-img" src="sourceimages/client-logo1.png" alt="Client6">
+							</div>
+							<div class="slider-item">
+								<img class="item-img" src="sourceimages/client-logo1.png" alt="Client7">
+							</div>
+							<div class="slider-item">
+								<img class="item-img" src="sourceimages/client-logo1.png" alt="Client8">
+							</div>
+							<div class="slider-item">
+								<img class="item-img" src="sourceimages/client-logo1.png" alt="Client1">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<footer id="footer">
-			
-		</footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 footer-col-1">
+						<div class="footer_logo">
+							<a href="index.html"><img src="sourceimages/logo.png" alt="MODUSversus"></a>
+						</div>
+						<p class="footer-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio,
+							gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec.</p>
+						<div class="phone-number"><span>Phone:&nbsp;</span><a href="tel:182 2569 5896">182 2569 5896</a></div>
+						<div class="email"><span>Email:&nbsp;</span><a href="mailto:info@modu.versus">info@modu.versus</a></div>
+					</div>
 
+					<div class="col-sm-6 col-md-6 col-lg-2 footer-col-2">
+						<h3 class="footer-title">Company</h3>
+						<div class="company-links">
+							<ul>
+								<li><a href="#">About</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Terms</a></li>
+								<li><a href="#">Privacy</a></li>
+								<li><a href="#">Testimonials</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-sm-6 col-md-6 col-lg-2 footer-col-3">
+						<h3 class="footer-title">Community</h3>
+						<ul class="community">
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Forum</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Newsletter</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-12 col-lg-4 footer-col-4">
+						<h3 class="footer-title"><i>from the </i><b>BLOG</b></h3>
+						<div class="blog-latest">
+							<img src="sourceimages/bg-blog-img.png" class="blog-latest-img">
+							<div class="blog-latest-info">
+								<p><a class="blog-link" href="https://www.infoplease.com/yearbyyear" target="_blank">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
+								<p class="date">26 May, 2013</p>
+							</div>
+						</div>
+
+						<div class="blog-latest">
+							<img src="sourceimages/bg-blog-img.png" class="blog-latest-img">
+							<div class="blog-latest-info">
+								<p><a class="blog-link" href="https://scotch.io/" target="_blank">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
+								<p class="date">26 May, 2013</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 	</div>
+	<div class="footer-copyright">
+		<div class="container">
+			<div class="row">
+				<div class="footer-area-copyright col-sm-6 col-md-8">
+					<p><span id="year"></span> ModusVersus</p>
+				</div>
+				<div class="footer-social col-sm-6 col-md-4 float-right">
+					<a href="https://www.facebook.com/" target="_blank"><span class="icon icon-facebook"><span></a>
+					<a href="https://plus.google.com/" target="_blank"><span class="icon icon-google"><span></a>
+					<a href="https://twitter.com/" target="_blank"><span class="icon icon-twitter"><span></a>
+					<a href="https://rss.com/" target="_blank"><span class="icon icon-rss"><span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>

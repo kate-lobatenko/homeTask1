@@ -28,31 +28,33 @@
     .navbar li.active a {
       background-color: $color2;
       box-shadow: 0px 3px 0px 0px $color3;
-     }
+    }
 
-     .navbar li:hover a {
-        background-color: $color4;
-        box-shadow: 0px 3px 0px 0px $color5;
-     }
+    .navbar li:hover a {
+      background-color: $color4;
+      box-shadow: 0px 3px 0px 0px $color5;
+    }
 
-     .drop-menu-container .drop-menu {
-        background-color: $color5;
-     }
+    .drop-menu-container .drop-menu {
+      background-color: $color5;
+    }
 
-     .drop-menu-container .drop-menu li a {
-        background-color: $color4;
-     }
-     .drop-menu-container .drop-menu:after {
-        border-bottom: 6px solid $color5;
-     }
-   
+    .drop-menu-container .drop-menu li a {
+      background-color: $color4;
+    }
+
+    .drop-menu-container .drop-menu:after {
+      border-bottom: 6px solid $color5;
+    }
+
   }
 
   .carousel .slide-text .slide-title {
     background-color: $color4;
   }
 
-  .carousel .btn-prev, .carousel .btn-next {
+  .carousel .btn-prev,
+  .carousel .btn-next {
     background-color: $color4;
     box-shadow: 0px 3px 0px 0px $color5;
   }
@@ -85,9 +87,9 @@
     box-shadow: 0px 3px 0px 0px $color5;
   }
 
-   .btn:hover+h2 .fa {
-      color: $color4;
-    }
+  .btn:hover+h2 .fa {
+    color: $color4;
+  }
 
   .modus-description h1 {
     color: $color5;
@@ -105,7 +107,8 @@
     background-color: $color4;
   }
 
-  .company-clients-carousel .slick-prev:hover, .company-clients-carousel .slick-next:hover {
+  .company-clients-carousel .slick-prev:hover,
+  .company-clients-carousel .slick-next:hover {
     background-color: $color4;
     box-shadow: 0px 3px 0px 0px $color5;
   }
@@ -116,37 +119,37 @@
 
   //portfolio page
 
-.filter li a:hover {
-  background-color: $color4;
-	box-shadow: 0px 3px 0px 0px $color5;
-}
+  .filter li a:hover {
+    background-color: $color4;
+    box-shadow: 0px 3px 0px 0px $color5;
+  }
 
-.filter li.active a {
+  .filter li.active a {
     background-color: $color2;
     box-shadow: 0px 3px 0px 0px $color3;
-}
+  }
 
-.portfolio-posts article .link-holder .link-site:before {
-  background: $color3;
-}
+  .portfolio-posts article .link-holder .link-site:before {
+    background: $color3;
+  }
 
-.portfolio-posts article .link-holder .link-site:hover {
-  color: $color4;
-}
+  .portfolio-posts article .link-holder .link-site:hover {
+    color: $color4;
+  }
 
-.portfolio-posts article .link-holder .link-site:hover:before {
-  background: $color4;
-}
+  .portfolio-posts article .link-holder .link-site:hover:before {
+    background: $color4;
+  }
 
-.portfolio-pagination li.active a {
-  background-color: $color2;
-  box-shadow: 0px 3px 0px 0px $color3;
-}
+  .portfolio-pagination li.active a {
+    background-color: $color2;
+    box-shadow: 0px 3px 0px 0px $color3;
+  }
 
-.portfolio-pagination li a:hover {
-  background-color: $color4;
-  box-shadow: 0px 3px 0px 0px $color5;
-}
+  .portfolio-pagination li a:hover {
+    background-color: $color4;
+    box-shadow: 0px 3px 0px 0px $color5;
+  }
 
 }
 
@@ -162,7 +165,7 @@
     min-height: $va-height;
   }
 
-  > * {
+  >* {
     white-space: normal;
     display: inline-block;
     vertical-align: $va-direction;
@@ -177,14 +180,16 @@
 //     or @include v-align-pair(image, text, bottom);
 //     or @include v-align-pair(image, text, middle, 200px);
 //
-@mixin v-align-pair($child-name1, $child-name2, $valign: middle, $width1: auto, $width2: auto ) {
+@mixin v-align-pair($child-name1, $child-name2, $valign: middle, $width1: auto, $width2: auto) {
   display: table;
-  .#{$child-name1}{
+
+  .#{$child-name1} {
     display: table-cell;
     vertical-align: $valign;
-    width: $width1; 
+    width: $width1;
   }
- .#{$child-name2} {
+
+  .#{$child-name2} {
     display: table-cell;
     vertical-align: $valign;
     width: $width2;
@@ -238,14 +243,15 @@
 /// font-smothing
 /// @include font-smoothing(on);
 /// @include font-smoothing(off);
-@mixin font-smoothing($value:on){
-  @if $value == on{
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
+@mixin font-smoothing($value:on) {
+  @if $value==on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  @else{
-    -webkit-font-smoothing:subpixel-antialiased;
-    -moz-osx-font-smoothing:auto;
+
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
   }
 }
 
@@ -291,60 +297,82 @@
   $width: nth($size, 1);
   $height: nth($size, length($size));
   $foreground-color: nth($color, 1);
-  $background-color: if(length($color) == 2, nth($color, 2), transparent);
+  $background-color: if(length($color)==2, nth($color, 2), transparent);
   height: 0;
   width: 0;
 
-  @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
+  @if ($direction==up) or ($direction==down) or ($direction==right) or ($direction==left) {
     $width: $width / 2;
     $height: if(length($size) > 1, $height, $height/2);
 
-    @if $direction == up {
+    @if $direction==up {
       border-bottom: $height solid $foreground-color;
       border-left: $width solid $background-color;
       border-right: $width solid $background-color;
-    } @else if $direction == right {
+    }
+
+    @else if $direction==right {
       border-bottom: $width solid $background-color;
       border-left: $height solid $foreground-color;
       border-top: $width solid $background-color;
-    } @else if $direction == down {
+    }
+
+    @else if $direction==down {
       border-left: $width solid $background-color;
       border-right: $width solid $background-color;
       border-top: $height solid $foreground-color;
-    } @else if $direction == left {
+    }
+
+    @else if $direction==left {
       border-bottom: $width solid $background-color;
       border-right: $height solid $foreground-color;
       border-top: $width solid $background-color;
     }
-  } @else if ($direction == up-right) or ($direction == up-left) {
+  }
+
+  @else if ($direction==up-right) or ($direction==up-left) {
     border-top: $height solid $foreground-color;
 
-    @if $direction == up-right {
-      border-left:  $width solid $background-color;
-    } @else if $direction == up-left {
+    @if $direction==up-right {
+      border-left: $width solid $background-color;
+    }
+
+    @else if $direction==up-left {
       border-right: $width solid $background-color;
     }
-  } @else if ($direction == down-right) or ($direction == down-left) {
+  }
+
+  @else if ($direction==down-right) or ($direction==down-left) {
     border-bottom: $height solid $foreground-color;
 
-    @if $direction == down-right {
-      border-left:  $width solid $background-color;
-    } @else if $direction == down-left {
+    @if $direction==down-right {
+      border-left: $width solid $background-color;
+    }
+
+    @else if $direction==down-left {
       border-right: $width solid $background-color;
     }
-  } @else if ($direction == inset-up) {
+  }
+
+  @else if ($direction==inset-up) {
     border-color: $background-color $background-color $foreground-color;
     border-style: solid;
     border-width: $height $width;
-  } @else if ($direction == inset-down) {
+  }
+
+  @else if ($direction==inset-down) {
     border-color: $foreground-color $background-color $background-color;
     border-style: solid;
     border-width: $height $width;
-  } @else if ($direction == inset-right) {
+  }
+
+  @else if ($direction==inset-right) {
     border-color: $background-color $background-color $background-color $foreground-color;
     border-style: solid;
     border-width: $width $height;
-  } @else if ($direction == inset-left) {
+  }
+
+  @else if ($direction==inset-left) {
     border-color: $background-color $foreground-color $background-color $background-color;
     border-style: solid;
     border-width: $width $height;
@@ -361,11 +389,13 @@
 $animation-speed: .3s !default;
 
 @mixin animate($properties, $duration: $animation-speed, $easing: ease-in-out) {
-  $list:();
+  $list: ();
+
   @each $prop in $properties {
     $str: #{$prop} #{$duration} #{$easing};
     $list: join($list, #{$str}, comma);
   }
+
   transition: $list;
 }
 
@@ -385,11 +415,26 @@ $animation-speed: .3s !default;
 ///   }
 
 @mixin placeholder {
-  &::-webkit-input-placeholder {@content}
-  &::-moz-placeholder {opacity: 1; @content}
-  &:-moz-placeholder {@content}
-  &:-ms-input-placeholder {@content}
-  &.placeholder {@content}
+  &::-webkit-input-placeholder {
+    @content
+  }
+
+  &::-moz-placeholder {
+    opacity: 1;
+    @content
+  }
+
+  &:-moz-placeholder {
+    @content
+  }
+
+  &:-ms-input-placeholder {
+    @content
+  }
+
+  &.placeholder {
+    @content
+  }
 }
 
 /// Font-size px to rem calc
@@ -401,4 +446,14 @@ $animation-speed: .3s !default;
 @mixin rem-font-size($pxSize) {
   font-size: $pxSize;
   font-size: ($pxSize / 10px) + rem;
+}
+
+@mixin padding($padding) {
+  padding: $padding;
+}
+
+@mixin anim-links-footer {
+  transition: all $animation-speed ease-in-out;
+  color: $black;
+  opacity: .5;
 }

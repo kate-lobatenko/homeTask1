@@ -21,6 +21,7 @@ $media-expressions: (
 
 @import 'vendors/include-media';
 @import 'vendors/normalize';
+@import 'vendors/change_bootstrap';
 
 @import 'base/variables';
 @import 'base/functions';
@@ -54,4 +55,12 @@ ul {
 
 p {
   margin: 0;
+}
+
+#main {
+  background: $bg-main-color;
+}
+
+button, input, form textarea {
+  border: none;
 }
