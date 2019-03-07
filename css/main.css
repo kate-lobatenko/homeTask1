@@ -1518,7 +1518,8 @@ footer p {
     position: relative;
     margin-bottom: 25px;
     text-align: left;
-    line-height: 20px; }
+    line-height: 20px;
+    overflow: hidden; }
   .portfolio-page img {
     max-width: 100%;
     display: block;
@@ -1565,8 +1566,11 @@ footer p {
   width: 100%; }
 
 .breadcumbs {
-  display: inline-block;
   float: right; }
+  .breadcumbs a {
+    color: #777; }
+    .breadcumbs a:hover {
+      text-decoration: underline; }
 
 .portfolio-nav {
   line-height: 50px;
@@ -1602,10 +1606,10 @@ footer p {
   line-height: 50px;
   margin: 10px 0;
   background-color: #76CACA;
-  box-shadow: 0 4px #62BDBD; }
+  border-bottom: 3px solid #62BDBD; }
   .btn-details:hover {
     background-color: #E8645A;
-    box-shadow: 0 3px #E2534B; }
+    border-bottom: 3px solid #E2534B; }
   @media only screen and (min-width: 460px) {
     .btn-details {
       float: right;
@@ -1621,22 +1625,23 @@ footer p {
   .page-nav button {
     width: 40px;
     height: 40px;
+    line-height: 40px;
     margin-right: 10px;
     font-size: 16px;
     font-weight: 900;
     background-color: #9BA3A3;
-    box-shadow: 0 3px #7F8C8C; }
+    border-bottom: 3px solid #7F8C8C; }
     .page-nav button:hover {
       background-color: #E8645A;
-      box-shadow: 0 3px #E2534B; }
-  .page-nav .fa {
+      border-bottom: 3px solid #E2534B; }
+  .page-nav .icon {
     padding: 0;
     font-size: 16px;
     color: #fff; }
 
 button.active-page {
   background-color: #649792;
-  box-shadow: 0 3px #528B86; }
+  border-bottom: 0 3px #528B86; }
 
 .view-more-data {
   background: #ececec;
