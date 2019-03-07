@@ -65,6 +65,7 @@ footer {
 
 .footer-social {
     text-align: right;
+
     @media all and (max-width: 575px) {
         text-align: center;
     }
@@ -180,6 +181,14 @@ footer {
 .footer-col-4 {
     i {
         font-weight: 400;
+    }
+
+    .footer-title {
+
+        i,
+        b {
+            color: $white;
+        }
     }
 
     @media all and (max-width: 991px) {

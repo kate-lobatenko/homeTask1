@@ -88,7 +88,7 @@
 }
 
 .nav-list li {
-    padding: 0 1%;
+    padding: 0 8px;
     position: relative;
 
     @media all and (max-width: 991px) {
@@ -147,6 +147,13 @@
 
 .parent {
     position: relative;
+    padding-left: 15px;
+}
+
+.nav-list {
+    .parent a {
+        padding-left: 20px;
+    }
 }
 
 .parent:before {
@@ -160,6 +167,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 80px;
+    left: 15px;
 }
 
 .parent .second-level {
@@ -174,6 +182,20 @@
     background-color: $dark-red;
     border-radius: 5px;
     padding: 5px;
+
+    &:after {
+        bottom: 100%;
+        border: solid transparent;
+        content: "";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-bottom-color: #e2534b;
+        border-width: 6px;
+        left: 8%;
+        margin-left: -6px;
+    }
 }
 
 .parent:hover {
@@ -186,22 +208,43 @@
     }
 }
 
+li.child:last-child {
+    margin-bottom: 0;
+}
+
 li.child {
     color: $white;
     transition: all $animation-speed ease-in-out 0s;
     height: 30px;
     line-height: 30px;
     padding: 0;
-
-    &:hover a {
-        background: $turquoise;
-    }
+    background: $btn-background;
+    border-radius: 3px;
+    margin-bottom: 5px;
 
     a {
         text-transform: initial;
         padding: 5px;
         width: 100%;
         display: inline-block;
+        padding-left: 15px;
+
+        &:before {
+            content: "\e910";
+            display: inline-block;
+            position: absolute;
+            width: 6px;
+            height: 9px;
+            color: $white;
+            font-family: 'icomoon', 'sans-serif';
+            font-size: 14px;
+            font-weight: 400;
+            left: 0;
+        }
+
+        &:hover {
+            background: $turquoise;
+        }
     }
 }
 
