@@ -780,7 +780,7 @@ input[type='submit'] {
 .pros-list li {
   padding-bottom: 10px;
   font-size: 13px;
-  color: #777777; }
+  color: #777; }
   .pros-list li .icon-arrow-right {
     width: 10px;
     height: 12px;
@@ -826,7 +826,7 @@ input[type='submit'] {
   padding: 5px;
   display: block;
   text-align: center;
-  color: #777777; }
+  color: #777; }
 
 .center-block {
   margin-top: 35px; }
@@ -838,12 +838,12 @@ input[type='submit'] {
   text-align: left;
   margin-bottom: 10px;
   font-size: 13px;
-  color: #777777;
+  color: #777;
   line-height: 20px;
   font-weight: 400; }
 
 .caption small {
-  color: #777777;
+  color: #777;
   font-size: 13px;
   font-style: italic;
   line-height: 24.7px;
@@ -858,7 +858,7 @@ input[type='submit'] {
   z-index: 4; }
 
 a.user-link {
-  color: #777777;
+  color: #777;
   font-size: 16px;
   font-weight: 400;
   line-height: 30.4px; }
@@ -1745,7 +1745,7 @@ button.active-page {
         margin-bottom: 10px;
         text-align: center; } }
   .view-more-data .text {
-    color: #777777;
+    color: #777;
     font-size: 13px;
     font-weight: 400;
     line-height: 20.8px; }
