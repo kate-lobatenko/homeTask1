@@ -28,12 +28,14 @@
     color: $title-promo-color;
     width: 100%;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .promo-text {
     color: $promo-text-color;
     width: 100%;
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .our-jobs-slider {
@@ -44,6 +46,7 @@
 
     .img-slider {
         background: $brand-color3;
+        border-radius: 6px;
     }
 
     .slick-slide {
@@ -52,12 +55,12 @@
 
     .slick-list {
         overflow: visible;
-
     }
 
     .slick-slide>div {
         transform: scale(1);
         transition: transform .3s cubic-bezier(.4, 0, .2, 1);
+        margin: 10px;
     }
 
     .slick-center>div {
@@ -78,6 +81,7 @@
     .slick-prev,
     .slick-next {
         display: none !important;
+        z-index: 1;
     }
 }
 
@@ -215,4 +219,11 @@
 
 .additional-info {
     z-index: 4;
+}
+
+a.user-link {
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30.4px;
 }
