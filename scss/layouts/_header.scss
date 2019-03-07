@@ -2,6 +2,12 @@
     display: block;
 }
 
+header {
+    .icon-search {
+        font-size: 16px;
+    }
+}
+
 #header {
     background: url("../sourceimages/bg-header.png") $base-background-color repeat-x 100% 100%;
     min-height: 80px;

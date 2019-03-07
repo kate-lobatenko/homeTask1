@@ -157,6 +157,21 @@
 .caption p {
     background: $bg-card-item;
     padding: 16px;
+    position: relative;
+
+    &:after {
+        content: '';
+        border: 15px solid transparent;
+        border-top-color: transparent;
+        border-top-style: solid;
+        border-top-width: 15px;
+        position: absolute;
+        pointer-events: none;
+        left: 30px;
+        bottom: -15px;
+        border-top: 15px solid #f8f8f8;
+        transform: rotate(-135deg);
+    }
 }
 
 .user-link {
@@ -168,6 +183,7 @@
 
 .center-block {
     margin-top: 35px;
+
     a {
         text-decoration: underline;
     }
