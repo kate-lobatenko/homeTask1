@@ -1324,6 +1324,9 @@ li.parent.active .child a {
     border-width: 6px;
     left: 8%;
     margin-left: -6px; }
+    @media all and (max-width: 991px) {
+      .second-level:after {
+        display: none; } }
 
 .parent:hover .second-level {
   display: block; }
@@ -1356,6 +1359,10 @@ li.child {
   border-radius: 3px;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out 0s; }
+  @media all and (max-width: 991px) {
+    li.active.parent li.child,
+    li.child {
+      background: transparent; } }
   li.active.parent li.child a,
   li.child a {
     text-transform: initial;
@@ -1375,6 +1382,10 @@ li.child {
       font-size: 14px;
       font-weight: 400;
       left: 0; }
+      @media all and (max-width: 991px) {
+        li.active.parent li.child a:before,
+        li.child a:before {
+          display: none; } }
     li.active.parent li.child a:hover,
     li.child a:hover {
       background: #76C7C0; }
@@ -1382,6 +1393,10 @@ li.child {
 li.active.parent li.child a {
   background: #e5645d;
   border-bottom: 3px solid #e2534b; }
+  @media all and (max-width: 991px) {
+    li.active.parent li.child a {
+      background: transparent;
+      border-bottom: none; } }
 
 li.active.parent li.child:last-child {
   margin-bottom: 0; }
