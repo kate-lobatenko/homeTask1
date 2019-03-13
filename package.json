@@ -25,6 +25,7 @@
     "grunt-svg2string": "0.2.1",
     "grunt-svgmin": "^5.0.0",
     "grunt-svgstore": "2.0.0",
+    "grunt-update": "^0.2.3",
     "load-grunt-tasks": "4.0.0",
     "node-sass": "^4.11.0"
   }

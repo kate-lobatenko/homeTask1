@@ -1331,6 +1331,16 @@ li.parent.active .child a {
     .parent:hover .second-level {
       display: none; } }
 
+@media all and (max-width: 991px) {
+  .parent.active .second-level {
+    display: block;
+    position: relative;
+    top: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0; } }
+
 li.child:last-child {
   margin-bottom: 0; }
 
@@ -1407,6 +1417,24 @@ li.active.parent li.child:last-child {
       display: inline-block;
       position: relative;
       top: 0; } }
+
+div.open-menu-link {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  font-size: 40px;
+  width: 40px;
+  right: 30px;
+  opacity: .7;
+  line-height: 80px;
+  z-index: 9999; }
+
+.hidden {
+  display: none; }
+
+.show {
+  display: block; }
 
 #footer {
   position: relative;
