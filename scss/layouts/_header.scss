@@ -225,6 +225,10 @@ li.parent.active .child a {
         border-width: 6px;
         left: 8%;
         margin-left: -6px;
+
+        @media all and (max-width: 991px) {
+            display: none;
+        }
     }
 }
 
@@ -234,6 +238,20 @@ li.parent.active .child a {
 
         @media all and (max-width: 991px) {
             display: none;
+        }
+    }
+}
+
+.parent.active {
+    .second-level {
+        @media all and (max-width: 991px) {
+            display: block;
+            position: relative;
+            top: 0;
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            padding: 0;
         }
     }
 }
@@ -254,6 +272,10 @@ li.child {
     margin-bottom: 5px;
     transition: all $animation-speed ease-in-out 0s;
 
+    @media all and (max-width: 991px) {
+        background: transparent;
+    }
+
     a {
         text-transform: initial;
         padding: 5px;
@@ -272,6 +294,10 @@ li.child {
             font-size: 14px;
             font-weight: 400;
             left: 0;
+
+            @media all and (max-width: 991px) {
+                display: none;
+            }
         }
 
         &:hover {
@@ -283,6 +309,12 @@ li.child {
 li.active.parent li.child a {
     background: $hover-link-bg-color;
     border-bottom: 3px solid $link-border-color;
+
+    @media all and (max-width: 991px) {
+        background: transparent;
+        border-bottom: none;
+    }
+
 }
 
 li.active.parent li.child:last-child {
@@ -325,4 +357,25 @@ li.active.parent li.child:last-child {
         position: relative;
         top: 0;
     }
+}
+
+div.open-menu-link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: $white;
+    font-size: 40px;
+    width: 40px;
+    right: 30px;
+    opacity: .7;
+    line-height: 80px;
+    z-index: 9999;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
 }
